@@ -1,16 +1,33 @@
+@import 'normalize.css';
 
-
-@keyframes animationExample{
-
-   from{ width:0; }
-   to {width: 100;}
-
+.column {
+    width: 50%;
+    float: left;
+}
+ 
+@media (max-width: 50rem) {
+    .column {
+        width: 100%;
+        float: none;
+    }
 }
 
-
-.animateThis{
-
-	animation: animationExample 2s;
-	display: flex;
-
+/* VISUALS */
+ 
+.column_one, .column_two {
+    border: 0.0625rem solid #ccc;
+}
+ 
+.column_two {
+    border-left: 0;
+}
+ 
+@media (max-width: 50rem) {
+    .column_one, .column_two {
+        border: 0.0625rem solid #ccc;
+    }
+ 
+    .column_two {
+        border-top: 0;
+    }
 }
