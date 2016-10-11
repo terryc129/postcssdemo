@@ -1,0 +1,7 @@
+.menu{
+   width:100;
+   a{ text-decoration:none; }
+
+   &::before{content:'Hello World';}
+
+}

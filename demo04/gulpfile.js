@@ -1,5 +1,5 @@
 
-//using postcss with gulp to solve the browser capability issue
+//using postcss with gulp for Minification and Optimization
 
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
