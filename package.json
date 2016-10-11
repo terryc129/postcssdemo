@@ -1,0 +1,29 @@
+{
+  "name": "postcssdemo",
+  "version": "1.0.0",
+  "description": "play some postcss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.7.7",
+    "cssnext": "^1.8.4",
+    "grunt": "^1.0.1",
+    "grunt-postcss": "^0.8.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "pixrem": "^3.0.2",
+    "postcss-color-rgba-fallback": "^2.2.0",
+    "postcss-import": "^8.1.2",
+    "postcss-opacity": "^4.0.0",
+    "postcss-pseudoelements": "^3.0.0",
+    "postcss-vmin": "^2.0.0",
+    "postcss-will-change": "^1.1.0",
+    "precss": "^1.4.0"
+  }
+}

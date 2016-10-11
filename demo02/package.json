@@ -1,0 +1,17 @@
+{
+  "name": "demo02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "cssnext": "^1.8.4",
+    "grunt-postcss": "^0.8.0",
+    "precss": "^1.4.0"
+  }
+}
