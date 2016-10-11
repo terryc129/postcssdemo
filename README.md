@@ -16,10 +16,9 @@
 
 
 ##Demo04
-- using postcss plugin for Minification and Optimization
 - `gulp-postcss` plugin to add `@import` rule which can combine multiple css files into the main style in order to reduce the `http` requests needed
 - `css-mqpacker` plugin to combine multiple `@media` queries into one
-- 'cssnano' plugin packs minify and optimize the css file
+- `cssnano` plugin packs minify and optimize the css file
 
 ##Demo05
 - using postcss `precss` plugin to work like preprocessor such as Sass.
