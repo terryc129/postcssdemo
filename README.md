@@ -22,6 +22,6 @@
 
 ##Demo05
 - using postcss `precss` plugin to work like preprocessor such as Sass.
-- Syntax of `$var`, `@if @else`, `@for @each` is same Sass, `@minxin` is a bit different
-- implement via webpack module bundler
+- Syntax of `$var`, `@if @else`, `@for @each` is same as Sass, `@minxin` is a bit different
+- implement via webpack module bundler (better using gulp if just need to see outcome of the complied css file itself)
 - `webpack-dev-server` and verify at localhost:8080
