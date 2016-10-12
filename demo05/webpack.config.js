@@ -14,7 +14,14 @@ module.exports={
  			{
  				test:/\.css$/,
  				loader:'style-loader!css-loader?importLoaders=1!postcss-loader'
- 			}
+ 			},
+
+      {
+        test:/\.png$/,
+        loader:'url-loader?limit=10000'
+
+
+      }
 
   	]
   },

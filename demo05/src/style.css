@@ -1,7 +1,53 @@
-.menu{
-   width:100;
-   a{ text-decoration:none; }
+$text-color: red;
+$logos: facebook, twitter,youtube,instagram;
 
-   &::before{content:'Hello World';}
+
+
+
+.menu{
+   height:10rem ;
+   width:50rem ;
+
+   @if 3 > 5 {background: blue;}
+   @else {background: green;}
+
+
+   @for $i from 1 to 3 {
+		p:nth-of-type($i){
+
+      	margin-left: calc(80% / $i);
+
+		}
+
+       }
+   &::before{
+    color: $text-color;
+   	content:'Hello World';}
+
+
+ }
+
+.logos{display:flex; width:50rem; height:10rem;}
+
+@define-mixin icon $logo, $margin {
+    .icon.$(logo){
+     width:64px;
+	 height:64px;
+   	 background-image: url('$(logo).png');
+     margin-left:$margin;
+	 margin-top:$margin;
+   }
+   
 
 }
+
+
+
+@each $logo in ($logos){
+ 
+    @mixin icon $(logo),1rem;
+
+}
+
+
+
