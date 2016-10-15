@@ -1,0 +1,28 @@
+
+
+
+.mine-SearchForm {
+    padding: 0;
+    margin: 0;
+    /* Typically, place modifiers above descendents */
+}
+/* Nest descendent under component */
+.mine-SearchForm .u-clearFix {
+    zoom: 1;
+}
+.mine-SearchForm .u-clearFix:before, .mine-SearchForm .u-clearFix:after {
+    content: "";
+    display: table;
+}
+.mine-SearchForm .u-clearFix:after {
+    clear: both;
+}
+.mine-SearchForm.is-invalid {
+    border: 1px solid red;
+}
+.mine-SearchForm--advanced {
+    padding: 1rem;
+}
+.mine-SearchForm-textField {
+    border: 1px solid #ccc;
+}
