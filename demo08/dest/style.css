@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Indie Flower";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Indie Flower"),local(IndieFlower),url(//fonts.gstatic.com/s/indieflower/v7/10JVD_humAd5zP2yrFqw6nZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/indieflower/v7/10JVD_humAd5zP2yrFqw6ugdm0LZdjqr5-oayXSOefg.woff2) format("woff2"),url(//fonts.gstatic.com/s/indieflower/v7/10JVD_humAd5zP2yrFqw6nhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+/*create alias using postcss-alias*/
+
+.set_border {
+    border-size: 1px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+
+/*using the pre-defined shorthand/alias created by postcss-crip*/
+.crip_shorthand {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+}
+
+
+/*postcss-font-magician will automatical search google font and find the font specified*/
+body {
+  font-family: "Indie Flower";
+}
+
+
+
+/* create circle via postcss-circle*/
+.circle {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    background-color: red;
+}
+
+
+
+/*create triangle via postcss-triangle*/
+.isosceles-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 1.1547rem 2rem;
+    
+    border-bottom-color: blue;
+}
+
+
+/*using postcss-all-link-colors for the link color during all states*/
+
+a {
+    color: #4D9ACC
+}
+
+a:visited {
+    color: #4D9ACC;
+}
+
+a:focus {
+    color: #4D9ACC;
+}
+
+a:hover {
+    color: #5BB8F4;
+}
+
+a:active {
+    color: #4D9ACC;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*postcss-position allows you to specify top,right,bottom,left in one line*/
+
+
+.relative {
+    position: relative;
+    top: 1;
+    right: 1;
+    bottom: 0;
+    left: 0;
+}
+
+/*using postcss-size to specify width and height in one line via size property*/
+
+.size{
+    width: 1rem;
+    height: 2rem;
+}
+
+
+/*postcss-verthorz to specify the vertical and horizental padding & margin at once*/
+
+.spacing{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/*postcss-color-short  to specify the shorthand for the color*/
+
+.short_colors {
+    color: #232323;
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.5);
+}

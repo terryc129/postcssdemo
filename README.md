@@ -29,3 +29,13 @@
 
 ##Demo06
 - using postcss together with the sass
+
+
+##Demo07
+- using postcss with BEM and SUIT methodologies
+- `postcss-bem` by defult using the SUIT syntax
+
+
+##Demo08
+- using postcss plugins for shorcut and shorthand
+- various plugins can help increse the css writing efficiency

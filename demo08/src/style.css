@@ -1,0 +1,89 @@
+
+/*create alias using postcss-alias*/
+@alias {
+    bsz: border-size;
+    bst: border-style;
+    bcl: border-color;
+}
+
+.set_border {
+    bsz: 1px;
+    bst: solid;
+    bcl: #ccc;
+}
+
+
+/*using the pre-defined shorthand/alias created by postcss-crip*/
+.crip_shorthand {
+    mt: 1rem;
+    mr: 2rem;
+    mb: 3rem;
+    ml: 4rem;
+}
+
+
+/*postcss-font-magician will automatical search google font and find the font specified*/
+body {
+  font-family: "Indie Flower";
+}
+
+
+
+/* create circle via postcss-circle*/
+.circle {
+    circle: 8rem red;
+}
+
+
+
+/*create triangle via postcss-triangle*/
+.isosceles-triangle {
+    triangle: equilateral pointing-up;
+    height: 2rem;
+    
+    background-color: blue;
+}
+
+
+/*using postcss-all-link-colors for the link color during all states*/
+
+a {
+    @link-colors all #4D9ACC {
+        hover: #5BB8F4;
+    }
+}
+
+.centered {
+  top: center;
+  left: center;
+}
+
+
+/*postcss-position allows you to specify top,right,bottom,left in one line*/
+
+
+.relative {
+    position: relative 1rem 1rem 0 0;
+}
+
+/*using postcss-size to specify width and height in one line via size property*/
+
+.size{
+    size:1rem 2rem;
+}
+
+
+/*postcss-verthorz to specify the vertical and horizental padding & margin at once*/
+
+.spacing{
+    padding-vert: 1rem;
+    margin-horz: 2rem;
+}
+
+/*postcss-color-short  to specify the shorthand for the color*/
+
+.short_colors {
+    color: #23;
+    background: #f;
+    border-color: rgba(0, 0.5);
+}
