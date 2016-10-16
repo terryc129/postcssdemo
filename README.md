@@ -48,3 +48,20 @@
 - Converting px units to rem with `postcss-pxtorem`
 - Auto-generating an RTL version via `rtlcss`
 - Auto-generating a style guide with `postcss-style-guide`
+
+
+##Demo10
+- develop postcss plugin `postcss-myplugin`
+- `postcss-myplugin` will allow easy insertion of font stacks into font-family declarations
+- before: 
+  ```
+  h1 {
+    font-family: "Open Sans", fontstack("Arial");
+  }
+  ```
+  after compile:
+  ```
+  h1 {
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  ```
