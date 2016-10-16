@@ -59,6 +59,7 @@
     font-family: "Open Sans", fontstack("Arial");
   }
   ```
+  <br>
   after compile:
   ```
   h1 {
