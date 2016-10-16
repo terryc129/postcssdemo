@@ -1,0 +1,207 @@
+
+* {
+    box-sizing: border-box;
+}
+ 
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "open sans";
+}
+ 
+html {
+    padding: 0;
+}
+ 
+body {
+    padding: 1.618rem;
+    background: #9b888c;
+}
+ 
+.row {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.row:before {
+    content: '';
+    display: table;
+}
+ 
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+ 
+.main, .sidebar {
+    padding: 1.618rem;
+    min-height: 500px;
+}
+ 
+.main {
+    width: calc(99.9% * 3/5 - (1.618rem - 1.618rem * 3/5));
+    background: #ffffff;
+    color: #2c2728;
+}
+ 
+.main:nth-child(1n) {
+    float: left;
+    margin-right: 1.618rem;
+    clear: none;
+}
+ 
+.main:last-child {
+    margin-right: 0;
+}
+ 
+.main:nth-child(5n) {
+    margin-right: 0;
+    float: right;
+}
+ 
+.main:nth-child(5n + 1) {
+    clear: both;
+}
+ 
+.sidebar {
+    width: calc(99.9% * 2/5 - (1.618rem - 1.618rem * 2/5));
+    background: #3a3e52;
+    color: #ffffff;
+}
+ 
+.sidebar:nth-child(1n) {
+    float: left;
+    margin-right: 1.618rem;
+    clear: none;
+}
+ 
+.sidebar:last-child {
+    margin-right: 0;
+}
+ 
+.sidebar:nth-child(5n) {
+    margin-right: 0;
+    float: right;
+}
+ 
+.sidebar:nth-child(5n + 1) {
+    clear: both;
+}
+
+
+.row {
+    margin-bottom: 1.618rem;
+}
+ 
+
+ 
+
+
+
+.convert_this {
+    width: 31.25rem;
+    font-size: 1.625rem;
+}
+
+section {
+    padding: 1rem;
+    background: #ffffff;
+}
+
+
+/*
+@styleguide
+
+	
+## This is the h1 style
+<br><br>
+<h1>Heading 1</h1>
+ 
+*/
+ 
+h1 { font-size: 2.625rem; }
+
+
+
+
+/*
+
+@styleguide
+
+
+## Colorblind Plugin Demo
+<br><br>
+
+<div class="row">
+    <div class="tile">This is a Tile</div>
+    <div class="tile">This is a Tile</div>
+    <div class="tile">This is a Tile</div>
+    <div class="tile">This is a Tile</div>
+    <div class="tile">This is a Tile</div>
+</div>
+
+*/ 
+
+.row {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.row:before {
+    content: '';
+    display: table;
+} 
+
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.tile {
+    width: calc(99.9% * 1/5 - (1.618rem - 1.618rem * 1/5));
+    padding: 3.75rem 1.618rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+.tile:nth-child(1n) {
+    float: left;
+    margin-right: 1.618rem;
+    clear: none;
+}
+.tile:last-child {
+    margin-right: 0;
+}
+.tile:nth-child(5n) {
+    margin-right: 0;
+    float: right;
+}
+.tile:nth-child(5n + 1) {
+    clear: both;
+}
+
+
+.tile:nth-of-type(1) {
+	color:#a17800;
+    background: #dea40e;
+}
+ 
+.tile:nth-of-type(2) {
+	color:#8a671d;
+    background: #856425;
+}
+ 
+.tile:nth-of-type(3) {
+    background: #3f65a1;
+}
+ 
+.tile:nth-of-type(4) {
+    background: #5679ba;
+}
+ 
+.tile:nth-of-type(5) {
+    background: #9d7500;
+}

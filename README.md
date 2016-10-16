@@ -39,3 +39,12 @@
 ##Demo08
 - using postcss plugins for shorcut and shorthand
 - various plugins can help increse the css writing efficiency
+
+
+##Demo09
+- explore 5 handy plugins
+- Generating grids with `Lost`
+- Seeing how designs look to colorblind people with `postcss-colorblind`
+- Converting px units to rem with `postcss-pxtorem`
+- Auto-generating an RTL version via `rtlcss`
+- Auto-generating a style guide with `postcss-style-guide`
